@@ -15,6 +15,7 @@ a {
 .topNavBar {
     border: 1px solid red;
     margin-top: 20px;
+    min-width: 800px;
 }
 .logo {
     float: left;
@@ -25,8 +26,8 @@ a {
     font-size: 18px;
 }
 .nav ul {
+    float: right;
     padding-top: 2px;
-    min-width: 200px;
 }
 .nav ul li {
     font-size: 14px;
@@ -38,4 +39,9 @@ a {
 .nav ul li a {
     color: gray;
     font-size: 13px;
+}
+.banner {
+    border: 1px solid blue;
+    background-image: url(img/bannner.png) ;
+    
 }
