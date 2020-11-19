@@ -1,0 +1,74 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+body {
+    background-color: #fbfcf7;
+}
+a {
+    text-decoration: none;
+}
+li {
+    list-style: none;
+}
+.clearfix {
+    content: '';
+    display: table;
+    clear: both;
+}
+.topNavBar {
+    position: absolute;
+    min-width: 1473px;
+    top: 0px;
+    left: 0px;
+    border: 1px solid red;
+    padding: 0px 22px;
+    margin-top: 45px
+}
+/* 好像logo和nav里的文字不是水平对齐的？ */
+/* 我想用line-height来解决，但是没有给topNavBar高度。这可咋整呢 */
+.logo {
+    display: inline-block;
+    font-size: 30px;
+    font-weight: 700;
+    font-family: 'Fredoka One';
+    color:#9a9da2;
+}
+.logo span {
+    color: #07cb79;
+}
+.nav {
+    border: 1px solid blue;
+    float: right;
+    
+}
+.nav li {
+    display: inline-block; 
+    margin: 0px 35px; 
+    padding-top: 9px;
+    border: 1px solid transparent;
+    padding-bottom: 6px;
+}
+/* 给了个padding让nav里的字看起来和logo里的字差不多高，但怎样准确给padding值呢 */
+.nav li a {
+    font-size: 13px;
+    color: #bdc0c3;
+}
+.nav li:first-child {
+    border-bottom: 3px solid #07cb79;
+}
+.nav li:hover {
+    border-bottom: 3px solid #07cb79;
+}
+.nav::after {
+    content: '';
+    /* 这里我想把svg那样的小图标放这里不知道可不可以 */
+}
+.banner {
+    width: 1519px;
+    height: 854px;
+    background-image: url(img/bannner.png);
+    background-repeat: no-repeat;
+    background-position: cover;
+    background-size: 100%;
+}
