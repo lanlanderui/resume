@@ -79,7 +79,7 @@ li {
 }
 .mainCard {
     /* border: 1px solid red; */
-    min-width: 940px;
+    width: 940px;
     margin: -339px auto 0px;
     background-color: white;
     box-shadow: 2px 2px 5px rgb(104, 104, 104,.4);
@@ -150,7 +150,6 @@ li {
     color: #9da0a7;
 }
 .footer {
-    display: flex;
     float: left;
     width: 100%;
     /* oh no 我一直再滥用float ！*/
@@ -159,8 +158,20 @@ li {
     text-align: center;
 }
 .footer a {
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    border-radius: 50%;
     display: inline-block;
     font-size: 25px;
-    padding: 25px 0px;
-    /* 我好像越走越偏，只要我一加左右的padding 或者margin */
+    /* 我好像越走越偏，只要我一加左右的padding 或者margin,mainCard的宽度就改变了*/
+    /* 因为没有给mainCard一个固定的宽度 本着能不设置wight就不设置的原则*/
+    /* 现在我给他固定宽度了 */
+    margin: 25px;
+    box-sizing: border-box;
+    /* border: 1px solid transparent; */
+}
+.footer a:hover {
+    /* border: 1px solid blue; */
+    background-color: rgb(104, 104, 104,.2);
 }
