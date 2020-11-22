@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -56,7 +56,7 @@
             /* inline-block后高度和宽度都随内容，用了inline-block后，要调整的话好像就只能通过
             调整他的父盒子来进行调整 */
             /* border: 1px solid green; */
-            margin-top: 45px;
+            margin-top: 195px;
             /* 内联元素不能通过margin：100px auto； 来居中
             想用padding的话，又只能通过调整他的父盒子*/
             text-align: center;
@@ -91,8 +91,30 @@
                 margin: 0px 11px;
                 font-size: 35px;
             }
+            .next {
+                width: 100%;
+               height: 50px;
+               margin-top: 120px;
+            }
+            .next a {
+                display: block;
+                /* float: left; */
+                width: 42px;
+                height: 42px;
+                border-radius: 50%;
+                text-align: center;
+                line-height: 42px;
+                /* 1.这里想用margin来水平居中，但是没有效果
+                    原因为a在next这个div里，而next这个div都没有给高度宽度，怎么居中呀 
+                    所以这里让next居中就行啦 */
+                /* margin: 0px auto; */
+                /* 2.但是next的父盒子也没有给宽高，所以还是搞一下next */
+                background-color: #fff;
+                margin: 0px auto;
+                
+            }
     </style>
-    <script src="//at.alicdn.com/t/font_2215303_mka806lzndm.js"></script>
+    <script src="//at.alicdn.com/t/font_2215303_c3gijqpnf09.js"></script>
 </head>
 <body style="background-color:sandybrown;">
     <style type="text/css">
@@ -145,6 +167,13 @@
                     </svg>
                 </a>
             </div>
+        </div>
+        <div class="next">
+            <a href="#">
+                <svg class="icon" aria-hidden="true">
+                    <use xlink:href="#icon-xiangxia"></use>
+                </svg>
+            </a>
         </div>
     </header>
 </body>
