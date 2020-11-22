@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>resume2</title>
+    <style>
+        * {margin: 0;padding:0;}
+        li {
+            list-style: none;
+        }
+        a {
+            text-decoration: none;
+        }
+        em {
+            font-style: normal;
+        }
+
+        .clearfix:after {
+            content: "";
+            display: table;
+            clear: both;
+        }
+        .topNavBar {
+            /* display: inline-block; */
+            /* border: 1px solid black; */
+            text-align: center;
+        }
+        .nav {
+            /* border: 1px solid blue; */
+            display: inline-block;
+            padding-top: 21px;
+        }
+        .nav li {
+            float: left;
+            margin: 0px 40px;
+        }
+        .nav li a {
+            color: rgb(255, 255, 255);
+            font-size: 14px;
+            font-weight: 700;
+        }
+        .nav li a:hover {
+            color: rgb(181,76,7);
+        }
+        .banner {
+            background-image: url(img/header-background.jpg);
+            background-position: center;
+            position: relative;
+            height: 800px;
+            min-height: 500px;
+            width: 100%;
+        }
+        .introduction {
+            /* display: inline-block; */
+            /* inline-block后高度和宽度都随内容，用了inline-block后，要调整的话好像就只能通过
+            调整他的父盒子来进行调整 */
+            /* border: 1px solid green; */
+            margin-top: 45px;
+            /* 内联元素不能通过margin：100px auto； 来居中
+            想用padding的话，又只能通过调整他的父盒子*/
+            text-align: center;
+            color: #fff;
+        }
+        .introduction h1 {
+            font-size: 90px;
+            margin-bottom: 26px;
+            font-weight: 500;
+        }
+
+        .text span {
+            display: block;
+            margin-bottom: 20px;
+            font-size: 20px;
+            /* font-family: 'Sitka Banner'; */
+            font: 22px 'librebaskerville-regular', serif;
+            font-weight: 500;
+            text-shadow: 0px 1px 2px rgba(0, 0, 0, .5);
+            color: #a8a8a8;
+        }
+            .text span em {
+                font-weight: 700;
+                color: #fff;
+        }
+            .introduction hr {
+                width: 60%;
+                margin: 30px auto 18px auto;
+               border-color: rgba(150, 150, 150, .2);
+        }
+            .introduction .media a {
+                margin: 0px 11px;
+                font-size: 35px;
+            }
+    </style>
+    <script src="//at.alicdn.com/t/font_2215303_mka806lzndm.js"></script>
+</head>
+<body style="background-color:sandybrown;">
+    <style type="text/css">
+        .icon {
+           width: 1em; height: 1em;
+           vertical-align: -0.15em;
+           fill: currentColor;
+           overflow: hidden;
+        }
+    </style>
+    <header class="banner">
+        <div class="topNavBar">
+            <ul class="nav clearfix">
+                <li><a href="#">主页</a></li>
+                <li><a href="#">关于</a></li>
+                <li><a href="#">简历</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">作品</a></li>
+                <li><a href="#">推荐</a></li>
+                <li><a href="#">联系</a></li>
+            </ul>
+        </div>
+        <div class="introduction">
+            <h1>王小美</h1>
+            <div class="text">
+               <span> I'm a Manila based <em>graphic designer</em> , <em>illustrator</em> and <em>webdesigner</em> creating</span>
+               <span>awesome and effective visual identities for companies of all sizes around the</span>
+               <span>globe. Let's <em>start scrolling</em> and learn more <em>about me</em>.</span>
+            </div>
+            <hr>
+            <div class="media">
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-qq"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-wechat"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-github"></use>
+                    </svg>
+                </a>
+                <a href="#">
+                    <svg class="icon" aria-hidden="true">
+                        <use xlink:href="#icon-weibo"></use>
+                    </svg>
+                </a>
+            </div>
+        </div>
+    </header>
+</body>
+</html>
